@@ -179,6 +179,24 @@ which play an important role in determining planetary motions. I also learned to
 								<script>
 									document.addEventListener("DOMContentLoaded", function () {
 										const text = `"For what is a man, what has he got? If not himself, then he has naught..."`;
+
+										// Check if the 'About' article is visible
+										const aboutArticle = document.getElementById("about");
+										const observer = new IntersectionObserver(
+											(entries) => {
+												entries.forEach((entry) => {
+													if (entry.isIntersecting) {
+														// Reset the typing effect if needed
+														typingElement.textContent = "";
+														index = 0;
+														typeWriter();
+													}
+												});
+											},
+											{ threshold: 0.5 }
+										);
+
+										observer.observe(aboutArticle);
 										const typingElement = document.getElementById("typing-text");
 										let index = 0;
 
@@ -325,6 +343,7 @@ which play an important role in determining planetary motions. I also learned to
 
 	</body>
 </html>
+
 
 
 
