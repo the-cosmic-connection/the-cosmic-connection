@@ -9,8 +9,59 @@
 		<title>The Cosmic Connection</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/user-astronaut-solid(4).svg" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            /* Style the dropdown menu */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            /* Style the dropdown menu items */
+            .dropdown-content {
+                display: none;
+                position: fixed;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                z-index: 1;
+			}
+            /* Style the dropdown menu links */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            /* Style the dropdown menu links on hover */
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            /* Show the dropdown menu when hovering over the dropdown */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            /* Style the nested dropdown menu */
+            .nested-dropdown {
+                position: sticky;
+            }
+            /* Style the nested dropdown menu items */
+            .nested-dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                left: 100%;
+                top: 0;
+                z-index: 1;
+            }
+
+            /* Show the nested dropdown menu when hovering over the parent item */
+            .nested-dropdown:hover
+                .nested-dropdown-content {
+                display: block;
+            }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -35,6 +86,7 @@
 								<li><a href="#works">Works</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
+								<li><a href="#elements">Elements</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -51,17 +103,17 @@
 								-->
 
 								<center>
-								<span class="image main">
-								<embed
-								src="article.pdf"
-								type="application/pdf"
-								width="100%"
-								height="100%"
-								style="height:700px"								
-								></embed>
-								</span>
-								</center>
-
+									<span class="image main">
+									<iframe
+									src="article.pdf"
+									width="100%"
+									height="100%"
+									style="height:700px"								
+									></iframe>
+									</span>
+									</center>
+									
+			
 								<p> More articles coming soon...</p>
 								
 								
@@ -74,7 +126,7 @@
 
 						<!-- Work -->
 							<article id="works">
-								<h2 class="major">Works</h2>
+								<h2 class="major">Projects</h2>
 								<span class="image main"><a href="https://www.aries.res.in/aries-0" target="_blank"><img src="images/aries_logo.png" alt="" /></a></span>
 								<h3>Study of a Mira Variable Star in the Field of NGC 559</h3>
 								
@@ -93,24 +145,59 @@ primary aim of this project was to study classical mechanics and get an idea of 
 which play an important role in determining planetary motions. I also learned to solve differential equations commonly encountered in this topic. 
                 </p>
                 <p>In the later part of the project, I solved the general relativistic orbital equation using a perturbative method to get the precessing orbit of planets and the expression for the rate of precession (which is the most prominent for Mercury). I did not study general relativity before getting the general relativistic orbital equation but took the equation, which is the same as that in the Newtonian case, except for an extra term, as given in books. This helped me learn the perturbative method for solving differential equations.</p>
+
+				<hr />
+				
+								<h2 class="major">Presentations</h2>
+								<span class="image main"><a href="https://www.iucaa.in/en/" target="_blank"><img src="images/iucaa_talk.png" alt="" /></a></span>
+								I gave a presentation on the topic <i>Quasar Absorption Lines</i> at the <a href="https://www.iucaa.in/en/" target="_blank"></a><B>Inter-University Centre for Astronomy and Astrophysics (IUCAA)</B></a> as a part of 
+								<a href="https://www.iucaa.in/en/education/summer-winter-programmes/introductory-summer-school-in-astronomy-and-astrophysics" target="_blank"><i>Introductory Summer School in Astronomy and Astrophysics (ISSAA), 2025</i></a>. In this short presentation, I tried to give an overview of the field. 
+
+								<span class="image main"><a href="https://youtu.be/NoVxcmKh7fU?si=YOvUS2Rp2TdJ8Li-" target="_blank"><img src="images/nac_talk.png" ></a></span>
+								I gave an introductory talk on <i>Photometry in Astronomy</i> on behalf of the <b><a href="https://astroclub-niser.github.io/" target="_blank">NISER Astronomy Club</a></b>. The aim of the talk was to introduce the beginners of the field with to the importance of photometry in astronomy 
+								and different photometric techniques relavant to astronomy.
+
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<center>
-								<span class="image main"><img src="images/IMG_20250513_220526.jpg" alt="" style="width: 40%; height: auto;" /></span>
+								<span class="image main">
+									<img src="images/IMG_20250513_220526.jpg" alt="" style="width: 40%; height: auto;" />
+								</span>
 								</center>
-								<p>
+								<p><i>
 								Hi,<br>
 								I am Arnab Biswas from Karimpur in the Nadia district of West Bengal, India. I am a 3rd-year integrated MSc. student at the School of Physical Sciences, National Institute of Science Education and Research, Bhubaneswar. 
 								My research interest lies in astrophysics and cosmology. I have done a few projects in this field which have helped me gain some invaluable knowledge and experience. Find some of my works <a href="#works">here</a>. 
 								I have also attended a few short-term schools on astronomy that have enhanced my knowledge and perspective of research in this field. 
 								My hobbies include playing ukulele, reading books, writing poems and star-gazing. 
 								<br>I intend to use this website as a platform to share and keep a record of the key moments of my journey as I pursue my dreams.
-								</p>
+								</p></i>
+								<blockquote id="typing-text"></blockquote>
+								<script>
+									document.addEventListener("DOMContentLoaded", function () {
+										const text = `"For what is a man, what has he got? If not himself, then he has naught..."`;
+										const typingElement = document.getElementById("typing-text");
+										let index = 0;
+
+										function typeWriter() {
+											if (index < text.length) {
+												typingElement.textContent += text.charAt(index);
+												index++;
+												setTimeout(typeWriter, 40); // Adjust typing speed here
+											}
+										
+										
+										}
+
+										typeWriter();
+									});
+								</script>
 								<p>
-								<h4>Skills </h4>
+								<!--
+								<h4>Skills </h4><i>
 								<ul style="list-style: none; margin: 0; padding: 0;">
 								<li><span class="fas fa-chart-pie"></span> Astronomical data analysis</li>
 								<li><span class="fas fa-laptop-code"></span> Cosmological simulations</li>
@@ -118,25 +205,64 @@ which play an important role in determining planetary motions. I also learned to
 								<li><span class="fas fa-terminal fa-sm"></span>&ensp; Bash</li>
 								<li><span class="fab fa-html5"></span>&ensp; HTML</li>	
 								<li><span class="fas fa-code"></span>&ensp; Wolfram</li>															
-								</ul>
+								</ul></i>
+								-->
+								<div class="dropdown">
+									<button class="button small">
+										Skills
+									</button>
+									<div class="dropdown-content">
+										<div class="nested-dropdown">
+											<a href="#"><span class="fas fa-chart-pie"></span> Astronomical data analysis</a>
+										</div>
+										<div class="nested-dropdown">
+											<a href="#"><span class="fas fa-laptop-code"></span> Cosmological simulations</a>
+										</div>
+										<div class="nested-dropdown">
+											<a href="#"><span class="fab fa-python"></span>&ensp; Python</a>
+										</div>
+										<div class="nested-dropdown">
+											<a href="#"><span class="fas fa-terminal fa-sm"></span>&ensp; Bash</a>
+										</div>
+										<div class="nested-dropdown">
+											<a href="#"><span class="fab fa-html5"></span>&ensp; HTML</a>
+										</div>
+									</div>
+								</div>
 								</p>
 								<p>
-								<h4>Awards/ Recognitions</h4>
+								<h4>Awards/ Recognitions</h4><i>
 								<ul>
 								<li>Attended the Introductory Summer School in Astronomy and Astrophysics, 2025 organized by the Inter-University Centre for Astronomy and Astrophysics (IUCAA) </li>
 								<li>Attended the Radio Astronomy Winter School 2024, jointly organized by  IUCAA and the National Centre for Radio Astrophysics (NCRA)</li>
 								<li>Summer Research Fellow 2024, selcted by the Indian Academy of Sciences </li>
 								<li>DAE-Disha scholar</li>
 								</ul>
+							    </i>
 								</p>
 								<p>
-								<h4>Responsibilities</h4>
+								<h4>Responsibilities</h4><i>
 								<ul>
-								<li>Representative of <a href="https://astroclub-niser.github.io/" target="_blank">NISER Astronomy Club’s</a> Telescope Training Committee.<br /> (August 2023 - Present) </li>
-								</ul>
+								<li>Representative of <a href="https://astroclub-niser.github.io/" target="_blank">NISER Astronomy Club’s</a> Telescope Training Committee.<br /> (August 2023 - July 2025) </li>
+								</ul></i>
 								</p>
-								Find my carriculum vitae <a href='mycv.pdf'>here</a>.
+
+								Find my carriculum vitae <a href='#cv'>here</a>.
+
+								
 							</article>
+
+						<!--CV-->
+						<article id="cv">
+							<center>
+							<iframe
+									src="mycv.pdf"
+									width="100%"
+									height="100%"
+									style="height:700px"								
+									></iframe>
+								</center>
+						</article>
 
 						<!-- Contact -->
 							<article id="contact">
@@ -199,5 +325,6 @@ which play an important role in determining planetary motions. I also learned to
 
 	</body>
 </html>
+
 
 
