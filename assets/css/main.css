@@ -30,6 +30,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE/Edge */
+}
+
+body {
 	line-height: 1;
 }
 
