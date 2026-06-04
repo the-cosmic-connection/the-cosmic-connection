@@ -1,4 +1,4 @@
-## Hi there 👋
+I am Arnab Biswas, a 4th-year Integrated MSc. student at the National Institute of Science Education and Research, Bhubaneswar. I am doing my major in Physics. I have an interest in astronomy and cosmology.
 
 <!--
 **the-cosmic-connection/the-cosmic-connection** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
